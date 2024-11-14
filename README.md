@@ -1,6 +1,6 @@
 # Sagrada Boardgame in Java
 
-Java representation of Cranio's boardgame Sagrada. Features include: remote play in multiplayer mode using Socket or RMI methods, command line/GUI view, Server-Client approach.
+Java representation of Cranio's boardgame Sagrada. Features include: remote play in multiplayer mode using Socket or RMI methods, command line/GUI view, Client-Server approach.
 
 ## Coverage test
 	
@@ -13,7 +13,7 @@ https://www.lucidchart.com/documents/view/6b7fbe65-86ba-4f5c-9911-90f8060f67d2
 
 ## Features implemented 
 
-Complete rules of the game + CLI + GUI + RMI + Socket + Dynamic Card Schemas, Server-Client approach
+Complete rules of the game + CLI + GUI + RMI + Socket + Dynamic Card Schemas, Client-Server approach
 
 ## Design patterns used 
 
@@ -25,7 +25,9 @@ Design patterns used: State, MVC, Observer, Strategy, Proxy
 	- managed reconnection of players to the lobby and room of ongoing game
 	- designed a protocol to communicate via Socket without using Serializable methods. Contents to send are encoded with markers in a string 
 	
-## Game limitations: this game is only supported by UNIX systems and with JDKx
+## Game limitations
+
+This game is only supported by UNIX systems and with JDKx
 
 ## Instructions to run the Jar:
 
