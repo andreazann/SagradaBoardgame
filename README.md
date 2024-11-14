@@ -1,37 +1,32 @@
-SAGRADA
-
-• Gruppo:
-
-	- Peruzzi Alessandro 828379 10493654
-	- Repole Giampiero 849085 10543357
-	- Zanetti Andrea 846901 10527115
+Java representation of Cranio's boardgame Sagrada. Features include: remote play in multiplayer mode using Socket or RMI methods, command line/GUI view, Server-Client approach.
 
 • Coverage test :
 	
-	- Model 97,8% (2,2% non testabile perchè metodi che vengono eseguiti quando si fa partire il progetto da jar)
+	- Model 97,8% (2,2% unable to test packages executed when running jar)
 
 • UML : https://www.lucidchart.com/documents/view/6b7fbe65-86ba-4f5c-9911-90f8060f67d2
 
-• Funzionalità implementate : regole complete + CLI + GUI + RMI + Socket + Carte Schema Dinamiche
+![UML Sagrada(1)](https://github.com/user-attachments/assets/e4983cf5-2525-4568-a137-7dbdd67e1f92)
 
-• Alcuni dei pattern utilizzati: State, MVC, Observer, Strategy, Proxy
+• Features implemented : complete rules of the game + CLI + GUI + RMI + Socket + Dynamic Card Schemas, Server-Client approach
+
+• Some of the design patterns used: State, MVC, Observer, Strategy, Proxy
 	
-• Funzionalità aggiuntive:
+• Additional features:
 
-	- implementata una fase di registrazione/login e waiting room per la scelta delle finestre
-	- gestite riconnessioni dei giocatori nella waiting room, sala di scelta delle finestre e sala di gioco
-	- implementato un protocollo per la comunicazione via Socket come richiesto durante le prime fasi di sviluppo del progetto (non e' stata usata nessuna Serializable per Socket)
+	- implemented una signup/login phase and lobby while waiting to play where you can choose the starting cards
+	- managed reconnection of players to the lobby and room of ongoing game
+	- designed a protocol to communicate via Socket without using Serializable methods. Contents to send are encoded with markers in a string 
 	
-• Limitazioni del gioco:
+• Game limitations: this game is only supported by UNIX systems and with JDKx
 
-	- attualmente il gioco è supportato solo da sistemi UNIX
-	- per una dimenticanza del gruppo, il jar è stato caricato con il timer per il turno della durata di soli 10 secondi (per questioni di debug). I timer sono comunque modificabili da un file di testo presente nel jar e saranno portati a 120 secondi per la presentazione del progetto
+• Instructions to run the Jar:
 
-• Istruzioni per l'esecuzione del Jar:
+	- Compatible only with JDKx
 
-	- Per eseguire il Server da jar, spostarsi nella cartella dove è presente il jar Game.jar e digitare il comando da terminale 
+	- Execute Server from command line using 
 	>java -cp Game.jar repolezanettiperuzzi.controller.MasterGame
 	
-	- Per eseguire il Client da jar, spostarsi nella cartella dove è presente il jar Game.jar e digitare il comando da terminale 
+	- Execute Client from command line using 
 	>java -cp Game.jar repolezanettiperuzzi.view.GameView
 	
