@@ -26,6 +26,11 @@ Design patterns used: State, MVC, Observer, Strategy, Proxy
 <img width="400" alt="action-space" src="https://github.com/user-attachments/assets/e503f163-01d0-42e3-8130-f50a73e1ffe5">
 
 <img width="1000" alt="action-space" src="https://github.com/user-attachments/assets/4e0cf684-1549-4ce1-b489-28f3c5998164">
+
+<img width="800" alt="action-space" src="https://github.com/user-attachments/assets/4f33d6ba-6252-4479-87b9-33f31a24c86e">
+
+<img width="800" alt="action-space" src="https://github.com/user-attachments/assets/5a29498e-f690-4354-87ea-70b904b15ff1">
+
 	
 ## Additional features:
 
